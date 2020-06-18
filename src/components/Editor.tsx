@@ -13,7 +13,11 @@ type CodeProps = {
 }
 
 export const start_code = `function add(a, b) {
-  return a + b;
+  if (a !== null && b !== null) {
+    return a+b;
+  } else {
+    return null;
+  }
 }`;
 
 export class CodeEditor extends React.Component<CodeProps, CodeState> {
