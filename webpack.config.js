@@ -35,4 +35,10 @@ module.exports = {
         "react": "React",
         "react-dom": "ReactDOM"
     },
+
+    stats: {
+        warningsFilter: [
+            "Failed to parse source map from"
+        ]
+    }
 };

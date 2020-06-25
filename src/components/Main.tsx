@@ -120,6 +120,9 @@ export class Main extends React.Component<MainProps, MainState> {
         part.start();
 
         Tone.Transport.start();
+        this.setState({
+            currentPos: 0
+        })
     }
 
     onTextChange(code: string) {
@@ -128,9 +131,14 @@ export class Main extends React.Component<MainProps, MainState> {
 
     render() {
         return <div>
-            <CodeEditor onTextChange={this.onTextChange} code={this.state.code}></CodeEditor>
+            <div style={{
+                display: "flex"
+            }}>
+                <CodeEditor onTextChange={this.onTextChange} code={this.state.code}></CodeEditor>
+                <MusicPlayerDisplay currentPos={this.state.currentPos} text={this.state.code}></MusicPlayerDisplay>
+            </div>
+
             <StartButton onClick={this.onStartAudioify}></StartButton>
-            <MusicPlayerDisplay currentPos={this.state.currentPos} text={this.state.code}></MusicPlayerDisplay>
         </div>
     }
 }

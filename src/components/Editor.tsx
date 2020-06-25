@@ -35,7 +35,12 @@ export class CodeEditor extends React.Component<CodeProps, CodeState> {
                 textareaId="editor"
                 style={{
                     fontFamily: '"IBM Plex Mono", monospace',
-                    fontSize: 13,
+                    fontSize: 15,
+                    backgroundColor: "#2f2f2f",
+                    color: "#ccc",
+                    display: "table",
+                    paddingRight: 8,
+                    borderRadius: 3
                 }}
             />
         );
