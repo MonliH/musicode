@@ -1,0 +1,31 @@
+{
+  "name": "musicode",
+  "version": "1.0.0",
+  "private": true,
+  "description": "musicode",
+  "author": "Monlih",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.11.1",
+    "gatsby-plugin-gatsby-cloud": "^2.11.0",
+    "gatsby-plugin-image": "^1.11.0",
+    "gatsby-plugin-react-helmet": "^4.11.0",
+    "gatsby-plugin-sharp": "^3.11.0",
+    "gatsby-plugin-theme-ui": "^0.10.1",
+    "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-transformer-sharp": "^3.11.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "theme-ui": "^0.10.0"
+  }
+}
